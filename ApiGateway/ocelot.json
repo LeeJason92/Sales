@@ -1,0 +1,1311 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "localhost:5259"
+  },
+  "Routes": [
+    //Product Type
+    //Get All Product Type
+    {
+      "UpstreamPathTemplate": "/api/producttype/all-producttype",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/producttype/all-producttype",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Get Product Type By No
+    {
+      "UpstreamPathTemplate": "/api/producttype/load-producttype-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/producttype/load-producttype-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Add Product Type
+    {
+      "UpstreamPathTemplate": "/api/producttype/add-producttype",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/producttype/add-producttype",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Edit Product Type
+    {
+      "UpstreamPathTemplate": "/api/producttype/edit-producttype?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/producttype/edit-producttype?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Delete Product Type
+    {
+      "UpstreamPathTemplate": "/api/producttype/delete-producttype?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/producttype/delete-producttype?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Product
+    //Get All Product
+    {
+      "UpstreamPathTemplate": "/api/product/all-product",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/product/all-product",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Get Product By No
+    {
+      "UpstreamPathTemplate": "/api/product/load-product-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/product/load-product-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Get Product By Desc
+    {
+      "UpstreamPathTemplate": "/api/product/load-product-by-desc?keyword={keyword}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/product/load-product-by-desc?keyword={keyword}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Add Product
+    {
+      "UpstreamPathTemplate": "/api/product/add-product",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/product/add-product",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Edit Product
+    {
+      "UpstreamPathTemplate": "/api/product/edit-product?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/product/edit-product?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Edit Product Stock
+    {
+      "UpstreamPathTemplate": "/api/product/edit-product-stock?id={id}&countUsed={countUsed}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/product/edit-product-stock?id={id}&countUsed={countUsed}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Delete Product
+    {
+      "UpstreamPathTemplate": "/api/product/delete-product?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/product/delete-product?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Sparepart Type
+    //Get All Sparepart Type
+    {
+      "UpstreamPathTemplate": "/api/spareparttype/all-spareparttype",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/spareparttype/all-spareparttype",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Get Sparepart Type By No
+    {
+      "UpstreamPathTemplate": "/api/spareparttype/load-spareparttype-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/spareparttype/load-spareparttype-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Add Sparepart Type
+    {
+      "UpstreamPathTemplate": "/api/spareparttype/add-spareparttype",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/spareparttype/add-spareparttype",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Edit Sparepart Type
+    {
+      "UpstreamPathTemplate": "/api/spareparttype/edit-spareparttype?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/spareparttype/edit-spareparttype?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Delete Sparepart Type
+    {
+      "UpstreamPathTemplate": "/api/spareparttype/delete-spareparttype?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/spareparttype/delete-spareparttype?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Sprepart 
+    //Get All Sparepart
+    {
+      "UpstreamPathTemplate": "/api/sparepart/all-sparepart",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/sparepart/all-sparepart",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Get Sparepart By No
+    {
+      "UpstreamPathTemplate": "/api/sparepart/load-sparepart-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/sparepart/load-sparepart-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Get Sparepart By Desc
+    {
+      "UpstreamPathTemplate": "/api/sparepart/load-sparepart-by-desc?keyword={keyword}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/sparepart/load-sparepart-by-desc?keyword={keyword}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Add Sparepart
+    {
+      "UpstreamPathTemplate": "/api/sparepart/add-sparepart",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/sparepart/add-sparepart",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Edit Sparepart
+    {
+      "UpstreamPathTemplate": "/api/sparepart/edit-sparepart?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/sparepart/edit-sparepart?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Edit Sparepart Stock
+    {
+      "UpstreamPathTemplate": "/api/sparepart/edit-sparepart-stock?id={id}&countUsed={countUsed}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/sparepart/edit-sparepart-stock?id={id}&countUsed={countUsed}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Delete Sparepart
+    {
+      "UpstreamPathTemplate": "/api/sparepart/delete-sparepart?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/sparepart/delete-sparepart?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5230
+        }
+      ]
+    },
+    //Persona
+    //Get All Persona
+    {
+      "UpstreamPathTemplate": "/api/Persona/all-persona",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Persona/all-persona",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //Get Persona By No
+    {
+      "UpstreamPathTemplate": "/api/Persona/load-persona-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Persona/load-persona-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //Get Persona By Desc
+    {
+      "UpstreamPathTemplate": "/api/Persona/load-persona-by-desc?keyword={keyword}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Persona/load-persona-by-desc?keyword={keyword}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //Add Persona
+    {
+      "UpstreamPathTemplate": "/api/Persona/add-persona",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Persona/add-persona",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //Edit Persona
+    {
+      "UpstreamPathTemplate": "/api/Persona/edit-persona?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Persona/edit-persona?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //Edit Persona Stock
+    {
+      "UpstreamPathTemplate": "/api/Persona/edit-persona-stock?id={id}&countUsed={countUsed}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Persona/edit-persona-stock?id={id}&countUsed={countUsed}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //Delete Persona
+    {
+      "UpstreamPathTemplate": "/api/Persona/delete-persona?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Persona/delete-persona?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5163
+        }
+      ]
+    },
+    //CustomerType
+    //Get All Customer Type
+    {
+      "UpstreamPathTemplate": "/api/customertype/all-customertype",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/customertype/all-customertype",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Get Customer Type By No
+    {
+      "UpstreamPathTemplate": "/api/customertype/load-customertype-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/customertype/load-customertype-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Add Customer Type
+    {
+      "UpstreamPathTemplate": "/api/customertype/add-customertype",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/customertype/add-customertype",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Edit Customer Type
+    {
+      "UpstreamPathTemplate": "/api/customertype/edit-customertype?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/customertype/edit-customertype?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Delete Customer Type
+    {
+      "UpstreamPathTemplate": "/api/customertype/delete-customertype?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/customertype/delete-customertype?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Customer
+    //Get All Customer
+    {
+      "UpstreamPathTemplate": "/api/customer/all-customer",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/customer/all-customer",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Get Customer By No
+    {
+      "UpstreamPathTemplate": "/api/customer/load-customer-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/customer/load-customer-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Get Customer By Name
+    {
+      "UpstreamPathTemplate": "/api/customer/load-customer-by-name?keyword={keyword}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/customer/load-customer-by-name?keyword={keyword}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Add Customer
+    {
+      "UpstreamPathTemplate": "/api/customer/add-customer",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/customer/add-customer",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Edit Customer
+    {
+      "UpstreamPathTemplate": "/api/customer/edit-customer?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/customer/edit-customer?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Delete Customer
+    {
+      "UpstreamPathTemplate": "/api/customer/delete-customer?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/customer/delete-customer?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ]
+    },
+    //Store
+    //Get All Store
+    {
+      "UpstreamPathTemplate": "/api/Store/all-store",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Store/all-store",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Get Store By No
+    {
+      "UpstreamPathTemplate": "/api/Store/load-store-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Store/load-store-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Add Store
+    {
+      "UpstreamPathTemplate": "/api/Store/add-store",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Store/add-store",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Edit Store
+    {
+      "UpstreamPathTemplate": "/api/Store/edit-store?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Store/edit-store?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Delete Store
+    {
+      "UpstreamPathTemplate": "/api/Store/delete-store?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Store/delete-store?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Marketing Area
+    //Get All MarketingArea
+    {
+      "UpstreamPathTemplate": "/api/MarketingArea/all-marketingarea",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/MarketingArea/all-marketingarea",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Get MarketingArea By No
+    {
+      "UpstreamPathTemplate": "/api/MarketingArea/load-marketingarea-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/MarketingArea/load-marketingarea-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Add MarketingArea
+    {
+      "UpstreamPathTemplate": "/api/MarketingArea/add-marketingarea",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/MarketingArea/add-marketingarea",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Edit MarketingArea
+    {
+      "UpstreamPathTemplate": "/api/MarketingArea/edit-marketingarea?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/MarketingArea/edit-marketingarea?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Delete MarketingArea
+    {
+      "UpstreamPathTemplate": "/api/MarketingArea/delete-marketingarea?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/MarketingArea/delete-marketingarea?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ]
+    },
+    //Pricing
+    //Get All Pricing
+    {
+      "UpstreamPathTemplate": "/api/Pricing/all-pricing",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Pricing/all-pricing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Get Pricing By No
+    {
+      "UpstreamPathTemplate": "/api/Pricing/load-pricing-by-pricing-id?pricingId={pricingId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Pricing/load-pricing-by-pricing-id?pricingId={pricingId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Get Pricing By Product No
+    {
+      "UpstreamPathTemplate": "/api/Pricing/load-pricing-by-product-id?productId={productId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Pricing/load-pricing-by-product-id?productId={productId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Get Pricing By Store No
+    {
+      "UpstreamPathTemplate": "/api/Pricing/load-pricing-by-store-id?storeId={storeId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Pricing/load-pricing-by-store-id?storeId={storeId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Get Pricing By Customer Type
+    {
+      "UpstreamPathTemplate": "/api/Pricing/load-pricing-by-customer-type-id?customerTypeId={customerTypeId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Pricing/load-pricing-by-customer-type-id?customerTypeId={customerTypeId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Add Pricing
+    {
+      "UpstreamPathTemplate": "/api/Pricing/add-pricing",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Pricing/add-pricing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Edit Pricing By Pricing No
+    {
+      "UpstreamPathTemplate": "/api/Pricing/edit-pricing-by-id?pricingId={pricingId}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Pricing/edit-pricing-by-id?pricingId={pricingId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Edit Pricing
+    {
+      "UpstreamPathTemplate": "/api/Pricing/edit-pricing?productId={productId}&storeId={storeId}&customerTypeId={customerTypeId}&validFrom={validFrom}&validTo={validTo}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Pricing/edit-pricing?productId={productId}&storeId={storeId}&customerTypeId={customerTypeId}&validFrom={validFrom}&validTo={validTo}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Delete Pricing By Id
+    {
+      "UpstreamPathTemplate": "/api/Pricing/delete-pricing-by-id?pricingId={pricingId}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Pricing/delete-pricing-by-id?pricingId={pricingId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Delete Pricing
+    {
+      "UpstreamPathTemplate": "/api/Pricing/delete-pricing?productId={productId}&storeId={storeId}&customerTypeId={customerTypeId}&validFrom={validFrom}&validTo={validTo}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Pricing/delete-pricing?productId={productId}&storeId={storeId}&customerTypeId={customerTypeId}&validFrom={validFrom}&validTo={validTo}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5223
+        }
+      ]
+    },
+    //Order Details
+    //Get All OrderDetail
+    {
+      "UpstreamPathTemplate": "/api/OrderDetail/all-orderdetail?personaNo={personaNo}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/OrderDetail/all-orderdetail?personaNo={personaNo}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get OrderDetail By Status
+    {
+      "UpstreamPathTemplate": "/api/OrderDetail/load-orderdetail-by-status?personaNo={personaNo}&status={status}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/OrderDetail/load-orderdetail-by-status?personaNo={personaNo}&status={status}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Sales Order
+    //Get All SalesOrder
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/all-salesorder",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/all-salesorder",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get SalesOrder By No
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-salesorder-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-salesorder-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get All SalesOrder By Type
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-all-salesorder-by-type?businessUnitType={businessUnitType}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-all-salesorder-by-type?businessUnitType={businessUnitType}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get Monthly SalesOrder By Type
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-monthly-salesorder-by-type?businessUnitType={businessUnitType}&monthNum={monthNum}&year={year}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-monthly-salesorder-by-type?businessUnitType={businessUnitType}&monthNum={monthNum}&year={year}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get Annual SalesOrder By Type
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-annual-salesorder-by-type?businessUnitType={businessUnitType}&year={year}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-annual-salesorder-by-type?businessUnitType={businessUnitType}&year={year}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get Monthly Revenue
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-monthly-revenue-salesorder?personaNo={personaNo}&monthNum={monthNum}&year={year}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-monthly-revenue-salesorder?personaNo={personaNo}&monthNum={monthNum}&year={year}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get Annual Revenue
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-annual-revenue-salesorder?personaNo={personaNo}&year={year}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-annual-revenue-salesorder?personaNo={personaNo}&year={year}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get Monthly Revenue By Store
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-monthly-revenue-salesorder-by-store?personaNo={personaNo}&storeNo={storeNo}&monthNum={monthNum}&year={year}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-monthly-revenue-salesorder-by-store?personaNo={personaNo}&storeNo={storeNo}&monthNum={monthNum}&year={year}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get Annual Revenue By Store
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/load-annual-revenue-salesorder-by-store?personaNo={personaNo}&storeNo={storeNo}&year={year}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/load-annual-revenue-salesorder-by-store?personaNo={personaNo}&storeNo={storeNo}&year={year}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Add SalesOrder
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/add-salesorder",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/add-salesorder",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Edit SalesOrder By SalesOrder No
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/edit-salesorder?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/edit-salesorder?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Delete SalesOrder By Id
+    {
+      "UpstreamPathTemplate": "/api/SalesOrder/delete-salesorder?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/SalesOrder/delete-salesorder?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Cancel Order
+    //Get All CancelOrder
+    {
+      "UpstreamPathTemplate": "/api/CancelOrder/all-cancelorder",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/CancelOrder/all-cancelorder",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get CancelOrder By Sales Order No
+    {
+      "UpstreamPathTemplate": "/api/CancelOrder/load-cancelorder-by-sales-order-no?salesOrderNo={salesOrderNo}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/CancelOrder/load-cancelorder-by-sales-order-no?salesOrderNo={salesOrderNo}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get All CancelOrder By Sales Order No Id
+    {
+      "UpstreamPathTemplate": "/api/CancelOrder/load-cancelorder-by-sales-order-no-id?salesOrderNo={salesOrderNo}&id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/CancelOrder/load-cancelorder-by-sales-order-no-id?salesOrderNo={salesOrderNo}&id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Add CancelOrder
+    {
+      "UpstreamPathTemplate": "/api/CancelOrder/add-cancelorder",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/CancelOrder/add-cancelorder",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Edit CancelOrder By SalesOrder No Id
+    {
+      "UpstreamPathTemplate": "/api/CancelOrder/edit-cancelorder?salesOrderNo={salesOrderNo}&id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/CancelOrder/edit-cancelorder?salesOrderNo={salesOrderNo}&id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Delete CancelOrder By Id
+    {
+      "UpstreamPathTemplate": "/api/CancelOrder/delete-cancelorder?salesOrderNo={salesOrderNo}&id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/CancelOrder/delete-cancelorder?salesOrderNo={salesOrderNo}&id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Delivery Order
+    //Get All DeliveryOrder
+    {
+      "UpstreamPathTemplate": "/api/DeliveryOrder/all-deliveryorder",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/DeliveryOrder/all-deliveryorder",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get DeliveryOrder By Delivery Order No
+    {
+      "UpstreamPathTemplate": "/api/DeliveryOrder/load-deliveryorder-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/DeliveryOrder/load-deliveryorder-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Get All DeliveryOrder By Sales Order No
+    {
+      "UpstreamPathTemplate": "/api/DeliveryOrder/load-deliveryorder-by-sales-order-no?salesOrderNo={salesOrderNo}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/DeliveryOrder/load-deliveryorder-by-sales-order-no?salesOrderNo={salesOrderNo}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Add DeliveryOrder
+    {
+      "UpstreamPathTemplate": "/api/DeliveryOrder/add-deliveryorder",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/DeliveryOrder/add-deliveryorder",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Edit DeliveryOrder By Delivery No
+    {
+      "UpstreamPathTemplate": "/api/DeliveryOrder/edit-deliveryorder?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/DeliveryOrder/edit-deliveryorder?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Delete DeliveryOrder By Delivery No
+    {
+      "UpstreamPathTemplate": "/api/DeliveryOrder/delete-deliveryorder?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/DeliveryOrder/delete-deliveryorder?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5174
+        }
+      ]
+    },
+    //Warehouse
+    //Get All Warehouse
+    {
+      "UpstreamPathTemplate": "/api/WarehouseOutbound/all-warehouseoutbound",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/WarehouseOutbound/all-warehouseoutbound",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ]
+    },
+    //Get Warehouse By Delivery Order No
+    {
+      "UpstreamPathTemplate": "/api/WarehouseOutbound/load-warehouseoutbound-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/WarehouseOutbound/load-warehouseoutbound-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ]
+    },
+    //Add Warehouse
+    {
+      "UpstreamPathTemplate": "/api/WarehouseOutbound/add-warehouseoutbound",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/WarehouseOutbound/add-warehouseoutbound",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ]
+    },
+    //Edit Warehouse By No
+    {
+      "UpstreamPathTemplate": "/api/WarehouseOutbound/edit-warehouseoutbound?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/WarehouseOutbound/edit-warehouseoutbound?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ]
+    },
+    //Delete Warehouse By No
+    {
+      "UpstreamPathTemplate": "/api/WarehouseOutbound/delete-warehouseoutbound?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/WarehouseOutbound/delete-warehouseoutbound?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5256
+        }
+      ]
+    },
+    //Invoice
+    //Get All Invoice
+    {
+      "UpstreamPathTemplate": "/api/Invoice/all-invoice",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Invoice/all-invoice",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5083
+        }
+      ]
+    },
+    //Get Invoice By No
+    {
+      "UpstreamPathTemplate": "/api/Invoice/load-invoice-by-id?id={id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Invoice/load-invoice-by-id?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5083
+        }
+      ]
+    },
+    //Get Invoice By Delivery No
+    {
+      "UpstreamPathTemplate": "/api/Invoice/load-invoice-by-delivery-id?deliveryOrderId={deliveryOrderId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Invoice/load-invoice-by-delivery-id?deliveryOrderId={deliveryOrderId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5083
+        }
+      ]
+    },
+
+    //Add Invoice
+    {
+      "UpstreamPathTemplate": "/api/Invoice/add-invoice",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Invoice/add-invoice",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5083
+        }
+      ]
+    },
+    //Edit Invoice By No
+    {
+      "UpstreamPathTemplate": "/api/Invoice/edit-invoice?id={id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Invoice/edit-invoice?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5083
+        }
+      ]
+    },
+    //Delete Invoice By No
+    {
+      "UpstreamPathTemplate": "/api/Invoice/delete-invoice?id={id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Invoice/delete-invoice?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5083
+        }
+      ]
+    }
+  ]
+}

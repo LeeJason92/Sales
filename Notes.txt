@@ -1,0 +1,22 @@
+Technology Stack:
+
+1. Web API
+a. Text Editor : Visual Studio 2022 Community
+b. Platform : .NET 6 + EF Core
+c. Language : C#
+d. Gateway : Ocelot API Gateway
+
+2. Database
+a. DB : SQL Server 2019 Express
+b. Tools : SQL Server Management Studio 18
+
+3. Diagram
+a. Tools : https://app.diagrams.net/
+
+4. Database Access
+a. Create user 'sales' with password 'sales123'
+b. Change connection string in every project to your database : 
+   -. Replace 'Data Source=NB-EDP-07\\SQLEXPRESS' in every appsettings.json & appsettings.Development.json file to your database server
+
+5. Gateway & API Access
+a. Check Gateway launch port & every API launch port in every launchSettings.json file, just in case there are port used by other apps 
